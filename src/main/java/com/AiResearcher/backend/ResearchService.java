@@ -57,7 +57,7 @@ public class ResearchService {
         // Query The AI Model API
         String response = webclient.post()
                 .uri(uriBuilder -> uriBuilder
-                        .path("/v1beta/models/gemini-2.0-flash:generateContent")
+                        .path("/v1beta/models/gemini-2.5-flash:generateContent")
                         .build())
                 .header("x-goog-api-key", geminiApiKey)
                 .header("Content-Type", "application/json")
